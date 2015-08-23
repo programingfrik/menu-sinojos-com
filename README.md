@@ -6,8 +6,11 @@ Para más detalles de las ideas que dieron inicio a este proyecto por favor diri
 
 Exite también un documento de [requerimientos][3] y uno de [diseño][4] que acompañan el proyecto para explicar que requerimientos se buscaba que esta aplicación cumpla y que diseño se empléa para con esos requerimientos.
 
+En caso de que necesiten alguna ayuda, llama al que más sabe a [google][5]
+
  [1]: https://github.com/programingfrik/menu-sinojos-com/wiki/Inicio
  [2]: https://github.com/programingfrik/menu-sinojos-com/wiki/Proyecto
  [3]: doc/requerimientos.md
  [4]: doc/diseno.md
+ [5]: http://google.com/
 
