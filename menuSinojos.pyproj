@@ -39,10 +39,15 @@
     <Compile Include="menuSinojos\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="doc\DER - SinOjos.png" />
+    <Content Include="doc\diseno.md" />
+    <Content Include="doc\prueba.md" />
+    <Content Include="doc\requerimientos.md" />
     <Content Include="menuSinojos\sinOjos\templates\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="doc\" />
     <Folder Include="menuSinojos\" />
     <Folder Include="menuSinojos\sinOjos\" />
     <Folder Include="menuSinojos\sinOjos\templates\" />
