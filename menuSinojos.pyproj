@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -29,10 +29,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="manage.py" />
-    <Compile Include="menuSinojos\sinOjos\models.py" />
-    <Compile Include="menuSinojos\sinOjos\tests.py" />
-    <Compile Include="menuSinojos\sinOjos\views.py" />
-    <Compile Include="menuSinojos\sinOjos\__init__.py" />
+    <Compile Include="menuapp\models.py" />
+    <Compile Include="menuapp\tests.py" />
+    <Compile Include="menuapp\views.py" />
+    <Compile Include="menuapp\__init__.py" />
     <Compile Include="menuSinojos\__init__.py" />
     <Compile Include="menuSinojos\settings.py" />
     <Compile Include="menuSinojos\urls.py" />
@@ -43,14 +43,14 @@
     <Content Include="doc\diseno.md" />
     <Content Include="doc\prueba.md" />
     <Content Include="doc\requerimientos.md" />
-    <Content Include="menuSinojos\sinOjos\templates\index.html" />
+    <Content Include="menuapp\templates\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="doc\" />
     <Folder Include="menuSinojos\" />
-    <Folder Include="menuSinojos\sinOjos\" />
-    <Folder Include="menuSinojos\sinOjos\templates\" />
+    <Folder Include="menuapp\" />
+    <Folder Include="menuapp\templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

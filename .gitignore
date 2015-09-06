@@ -60,3 +60,6 @@ target/
 
 # Para la gente de emacs para que ignore los backups
 *~
+
+# Para la gente que usa Visual Studio
+.vs/
