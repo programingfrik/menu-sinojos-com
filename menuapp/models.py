@@ -123,17 +123,3 @@ class Puntaje_usuarios (models.Model):
 class Puntaje_tipo_usuario (models.Model):
 	puntaje_tipo_usuario_id = models.IntegerField(primary_key=True) #Clave primaria explicita
 	tipo = models.CharField(max_length = 254)
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
