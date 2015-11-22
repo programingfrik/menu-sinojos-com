@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="portada.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="background_portada">
+    <img src="Images/Pica-Todo.jpg">
+</div>
+
+<div id="contenedor" class="container-fluid">
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+</div>
+
+<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+<br><br>
+<div id="Registro-Usuario">
+
+<div align="right"><a href="#Nombre_de_Usuario"><u style="padding-right:1%;">usuario@dominio.com</u></a></div>
+
+</div>
+
+<!--<h1>My First Heading</h1>
+<p>My first paragraph.</p>-->
+<div>
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">Portada</a></li>
+    <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">Ordenes</a></li>
+    <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab">Clientes</a></li>
+	<li role="presentation"><a href="#tab4" role="tab" data-toggle="tab">Carta</a></li>
+	<li role="presentation"><a href="#tab5" role="tab" data-toggle="tab">Horarios</a></li>
+</ul>
+</div>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+        <div align="left"><h1 style="padding-left:40%;">Men&uacute; Sin Ojos</h1></div>
+		<div>
+		<hr align="left" width="100%" style="border-width:2px;border-color:#000000;">
+		<b>Restaurante 1</b><div><img style="width:10%;height:10%;" src="Images/sushi_maki.jpg">Rasdkaskldkadj kajkdja ldjklas jdklasjdk ajsñdkljasdjasñk ldjka lsdjñkad sadhah</div>
+		<hr align="left" width="100%" style="border-width:2px;border-color:#000000;">
+		<b>Restaurante 2</b><div><img style="width:10%;height:10%;" src="Images/arroz_habichuela_carne.png">Rasdkaskldkadj kajkdja ldjklas jdklasjdk ajsñdkljasdjasñk ldjka lsdjñkad sadhah</div>
+		<hr align="left" width="100%" style="border-width:2px;border-color:#000000;">
+		<b>Restaurante 3</b><div><img style="width:10%;height:10%;" src="Images/hotdog.jpg">Rasdkaskldkadj kajkdja ldjklas jdklasjdk ajsñdkljasdjasñk ldjka lsdjñkad sadhah</div>
+		<hr align="left" width="100%" style="border-width:2px;border-color:#000000;">
+		</div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab2">
+        <p>Second tab's content.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab3">
+        <p>Third tab's content.</p>
+    </div>
+	<div role="tabpanel" class="tab-pane fade" id="tab4">
+        <p>Fourth tab's content.</p>
+    </div>
+	<div role="tabpanel" class="tab-pane fade" id="tab5">
+		<br>
+        <h2>Menus</h2>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">					
+				<!--<div class="input-group input-group-md">
+					<span class="input-group-addon"><input type="checkbox" aria-label="Entrada_Visible" id="Entrada_Visible"></span><h4>Entrada visible</h4>					
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><input type="checkbox" aria-label="PlatosFuertes_Visible" id="PlatosFuertes_Visible"></span><h4>Platos Fuertes visible</h4>
+				</div>
+				<div class="input-group">
+				   <span class="input-group-addon">some text</span>
+				   <input type="text" class="form-control" id="current_pwd" name="current_pwd" />
+				</div>-->
+				<div class="checkbox">
+					<label>
+					  <input type="checkbox" id="Entrada_Visible">Entrada visible</label>
+				</div>
+				<div class="checkbox">
+					<label>
+					  <input type="checkbox" id="PlatosFuertes_Visible">Platos Fuertes visible</label>
+				</div>									
+			</div>
+			<br>
+			<br>
+			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+				<div class="input-group input-group-md">		
+					<label for="Nombre" class="input-group-addon" id="Nombre" style="min-width: 7em;">Nombre</label>
+					<input type="text" class="form-control" placeholder="Nombre" id="Nombre">						
+				</div>
+			</div>
+			<div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+			</div>
+			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+				<div class="input-group input-group-md">		
+					<label class="input-group-addon text-right" id="Dias" style="min-width: 7em;">Días</label>
+					<input type="text" class="form-control" placeholder="Días" id="Dias">						
+				</div>
+			</div>
+			<div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+			</div>
+			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+				<div class="input-group input-group-md">		
+					<label class="input-group-addon" id="Horas" style="min-width: 7em;">Horas</label>
+					<input type="text" class="form-control" placeholder="Horas" id="Horas">						
+				</div>
+			</div>
+			<div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+			</div>		
+		</div>
+		
+		<br>
+		<br>
+		<div class="form-group">
+			<div class="col-lg-offset-4 col-lg-6">
+			  <button type="submit" class="btn btn-success">Guardar</button>
+			  <button type="submit" class="btn btn-danger col-lg-offset-1">Cancelar</button>
+			</div>			
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">				
+				<div class="checkbox">
+					<label>
+					  <input type="checkbox" id="Entrada_Visible_LV">Entradas lunes, mar... 08:00-11:0... activo</label>
+				</div>
+				<div class="checkbox">
+					<label>
+					  <input type="checkbox" id="Entrada_Visible_SD">Entradas sábado 20:00-23:0... activo</label>
+				</div>
+				<div class="checkbox">
+					<label>
+					  <input type="checkbox" id="PlatosFuertes_Visible_SD">Platos Fuertes miercoles 19:00-20:0... activo</label>
+				</div>													
+			</div>				
+		</div>
+		
+		<br>
+		<div class="form-group">
+			<div class="col-lg-offset-3 col-lg-6">
+			  <button type="submit" class="btn btn-danger">Eliminar</button>
+			  <button type="submit" class="btn btn-warning col-lg-offset-1">Editar</button>
+			  <button type="submit" class="btn btn-success col-lg-offset-1">Activación</button>
+			</div>			
+		</div>
+		
+		<!--<form class="form-horizontal">
+			  <div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+				  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+				<div class="col-sm-10">
+				  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+				  <div class="checkbox">
+					<label>
+					  <input type="checkbox"> Remember me
+					</label>
+				  </div>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+				  <button type="submit" class="btn btn-default">Sign in</button>
+				</div>
+			  </div>
+			</form>-->
+		
+</div>
+</div>
+</div>
+
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+</div>
+</div>
+
+</body>
+</html>
