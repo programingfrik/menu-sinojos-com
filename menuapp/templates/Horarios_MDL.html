@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="portada.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+</head>
+<body>
+
+<div class="background_portada">
+    <img src="Images/Pica-Todo.jpg">
+</div>
+
+<div id="contenedor" class="mdl-grid">
+<!--<h1>My First Heading</h1>
+<p>My first paragraph.</p>-->
+<div class="mdl-cell mdl-cell--1-col-phone mdl-cell--1-col-tablet mdl-cell--1-col-desktop">
+</div>
+
+<div class="mdl-cell mdl-cell--10-col-phone mdl-cell--10-col-tablet mdl-cell--10-col-desktop">
+<br>
+<div id="Registro-Usuario">
+
+<div align="right"><a href="#Registrarse"><u style="padding-right:1%;">Registrarse</u></a></div>
+<div align="right"><a href="#Iniciar-Sesion"><u style="padding-right:1%;">Iniciar Sesi&oacute;n</u></a></div>
+
+</div>
+
+<div class="mdl-tabs mdl-js-tabs">
+
+    <div class="mdl-tabs__tab-bar">
+        <a href="#tab1" class="mdl-tabs__tab">Portada</a>
+        <a href="#tab2" class="mdl-tabs__tab">Ordenes</a>
+        <a href="#tab3" class="mdl-tabs__tab">Clientes</a>
+		<a href="#tab4" class="mdl-tabs__tab">Carta</a>
+		<a href="#tab5" class="mdl-tabs__tab">Horarios</a>
+    </div>
+
+    <div class="mdl-tabs__panel" id="tab1" align="left">
+        <div align="left"><h1 style="padding-left:40%;font-size:250%;">Men&uacute; Sin Ojos</h1></div>
+		<div>
+		<hr align="left" width="100%" style="border-width:2px;border-color:#000000;">
+		<b>Restaurante 1</b><div><img style="width:10%;height:10%;" src="Images/sushi_maki.jpg">Rasdkaskldkadj kajkdja ldjklas jdklasjdk ajsñdkljasdjasñk ldjka lsdjñkad sadhah</div>
+		<hr align="left" width="100%" style="border-width:2px;border-color:#000000;">
+		<b>Restaurante 2</b><div><img style="width:10%;height:10%;" src="Images/arroz_habichuela_carne.png">Rasdkaskldkadj kajkdja ldjklas jdklasjdk ajsñdkljasdjasñk ldjka lsdjñkad sadhah</div>
+		<hr align="left" width="100%" style="border-width:2px;border-color:#000000;">
+		<b>Restaurante 3</b><div><img style="width:10%;height:10%;" src="Images/hotdog.jpg">Rasdkaskldkadj kajkdja ldjklas jdklasjdk ajsñdkljasdjasñk ldjka lsdjñkad sadhah</div>
+		<hr align="left" width="100%" style="border-width:2px;border-color:#000000;">
+		</div>
+    </div>
+    <div class="mdl-tabs__panel" id="tab2">
+        <p>Second tab's content.</p>
+    </div>
+    <div class="mdl-tabs__panel" id="tab3">
+        <p>Third tab's content.</p>
+    </div>
+	<div class="mdl-tabs__panel" id="tab4">
+        <p>Fourth tab's content.</p>
+    </div>
+	<div class="mdl-tabs__panel is-active" id="tab5">
+        <br>
+        <h2>Menus</h2>
+		<form>
+			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="Entrada_Visible">
+			  <input type="checkbox" id="Entrada_Visible" class="mdl-checkbox__input">
+			  <span class="mdl-checkbox__label">Entrada Visible</span>
+			</label>
+			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="PlatosFuertes_Visible">
+			  <input type="checkbox" id="PlatosFuertes_Visible" class="mdl-checkbox__input">
+			  <span class="mdl-checkbox__label">Platos Fuertes visible</span>
+			</label>
+			<!--*******************************-->			
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+				<label for="Nombre" class="mdl-textfield__label">Nombre</label>
+				<input type="text" class="mdl-textfield__input" id="Nombre" />
+			</div>	
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+				<label for="Dias" class="mdl-textfield__label">D&iacute;as</label>
+				<input type="text" class="mdl-textfield__input" id="Dias" />
+			</div>							
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+				<label for="Horas" class="mdl-textfield__label">Horas</label>
+				<input type="text" class="mdl-textfield__input" id="Horas" />
+			</div>
+			<!--*******************************-->	
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--2-col-phone mdl-cell--2-col-tablet mdl-cell--2-col-desktop">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-color--green mdl-color-text--white">Guardar</button>
+				</div>
+				<div class="mdl-cell mdl-cell--2-col-phone mdl-cell--2-col-tablet mdl-cell--1-col-desktop">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-color--red mdl-color-text--white">Cancelar</button>
+				</div>
+				<div class="mdl-cell mdl-cell--8-col-phone mdl-cell--8-col-tablet mdl-cell--8-col-desktop"></div>
+			</div>	
+		</form>
+		
+		<br>		
+		<form>
+			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="Entrada_Visible_LV">
+			  <input type="checkbox" id="Entrada_Visible_LV" class="mdl-checkbox__input">
+			  <span class="mdl-checkbox__label">Entradas lunes, mar... 08:00-11:0... activo</span>
+			</label>
+			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="Entrada_Visible_SD">
+			  <input type="checkbox" id="Entrada_Visible_SD" class="mdl-checkbox__input">
+			  <span class="mdl-checkbox__label">Entradas sábado 20:00-23:0... activo</span>
+			</label>
+			<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="PlatosFuertes_Visible_LD">
+			  <input type="checkbox" id="PlatosFuertes_Visible_LD" class="mdl-checkbox__input">
+			  <span class="mdl-checkbox__label">Platos Fuertes miercoles 19:00-20:0... activo</span>
+			</label>
+			<!--*******************************-->
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--2-col-phone mdl-cell--2-col-tablet mdl-cell--2-col-desktop">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-color--red mdl-color-text--white">Eliminar</button>
+				</div>
+				<div class="mdl-cell mdl-cell--2-col-phone mdl-cell--2-col-tablet mdl-cell--2-col-desktop">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-color--orange mdl-color-text--white">Editar</button>
+				</div>
+				<div class="mdl-cell mdl-cell--2-col-phone mdl-cell--2-col-tablet mdl-cell--2-col-desktop">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-color--green mdl-color-text--white">Activar</button>
+				</div>
+				<div class="mdl-cell mdl-cell--6-col-phone mdl-cell--6-col-tablet mdl-cell--6-col-desktop"></div>
+			</div>			
+		</form>
+    </div>
+
+</div>
+</div>
+
+<div class="mdl-cell mdl-cell--1-col-phone mdl-cell--1-col-tablet mdl-cell--1-col-desktop">
+</div>
+
+</div>
+
+</body>
+</html>
