@@ -8,6 +8,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
+
 # para que también ignore el bin del virtualenv
 bin/
 build/
@@ -16,6 +17,7 @@ dist/
 downloads/
 eggs/
 .eggs/
+include/
 lib/
 lib64/
 parts/

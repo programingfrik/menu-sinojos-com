@@ -12,8 +12,8 @@ class Restaurantes(models.Model):
     descripcion = models.TextField()
     codigoPostal = models.IntegerField(null=True)
     baja_logica = models.SmallIntegerField(null=True)
-    fecha_alta = DateField(auto_now=False)
-    fecha_baja = DateField(auto_now=False)
+    fecha_alta = models.DateField(auto_now=False)
+    fecha_baja = models.DateField(auto_now=False)
 
 class Restaurantes_fotos(models.Model): 
     restaurante_foto_id = models.IntegerField(primary_key=True) #Clave primaria explicita
@@ -27,14 +27,14 @@ class Restaurantes_fotos(models.Model):
 class Menus(models.Model):
     menu_id = models.IntegerField(primary_key=True) #Clave primaria explicita
     restaurante = models.ForeignKey(Restaurantes) #clave foranea Restaurantes
-    platos = models.ForeignKey(Platos) #clave foranea Platos
+    platos = models.ForeignKey("Platos") #clave foranea Platos
     nombre_mn = models.CharField(max_length=255)
     visible = models.BooleanField(default=False)
     
 class Horarios(models.Model):
     horario_id = models.IntegerField(primary_key=True) #Clave primaria horario
     restaurante = models.ForeignKey(Restaurantes) #clave foranea Restaurantes
-    dia = models.ForeignKey(Dia) #clave foranea Dia
+    dia = models.ForeignKey("Dia") #clave foranea Dia
     hora_apertura = models.TimeField(auto_now=False)    #LuisPv: Sobre este campo tengo mis dudas
     hora_cierre = models.TimeField(auto_now=False)      #LuisPv: Sobre este campo tengo mis dudas
     
@@ -52,17 +52,17 @@ class Platos(models.Model):
 class Pedidos(models.Model):
     Pedidos_id = models.IntegerField(primary_key=True) #Clave primaria explicita
     restaurante = models.ForeignKey(Restaurantes) #clave foranea Restaurantes
-    usuarios = models.ForeignKey(Usuarios) #clave foranea usuario_id
+    usuarios = models.ForeignKey("Usuarios") #clave foranea usuario_id
     fecha_pedido = models.DateField(auto_now=False)
     hora_pedido = models.TimeField(auto_now=False)  #LuisPv: Sobre este campo tengo mis dudas
     total_pedido = models.DecimalField(max_digits=None, decimal_places=None) 
-    estado_pedido = models.CharField(max_length 254)
+    estado_pedido = models.CharField(max_length=254)
 
 class Puntaje_restaurante(models.Model):
     puntaje_restaurante_id = models.IntegerField(primary_key=True) #Clave primaria explicita
     restaurante = models.ForeignKey(Restaurantes) #clave foranea Restaurantes
-    usuarios = models.ForeignKey(Usuarios) #clave foranea usuario_id
-    puntaje = models.ForeignKey(Puntaje) #clave foranea puntaje_id
+    usuarios = models.ForeignKey("Usuarios") #clave foranea usuario_id
+    puntaje = models.ForeignKey("Puntaje") #clave foranea puntaje_id
     
 class Platos_fotos(models.Model):
     platos_foto_id = models.IntegerField(primary_key=True) #Clave primaria explicita
@@ -86,8 +86,8 @@ class Platos_precios(models.Model):
 class Puntaje_platos(models.Model):
     Puntaje_platos_id = models.IntegerField(primary_key=True) #Clave primaria explicita
     platos = models.ForeignKey(Platos) #clave foranea Plato_id
-    usuarios = models.ForeignKey(Usuarios) #clave foranea usuario_id
-    puntaje = models.ForeignKey(Puntaje) #clave foranea puntaje_id
+    usuarios = models.ForeignKey("Usuarios") #clave foranea usuario_id
+    puntaje = models.ForeignKey("Puntaje") #clave foranea puntaje_id
     
 class Puntaje(models.Model):
     #Necesito entender bien esta tabla, sera el puntaje de Platos, Restaurantes y Usuarios de todo?? 
@@ -97,7 +97,7 @@ class Puntaje(models.Model):
 class Restaurantes_favoritos(models.Model):
     restaurante_favorito_id = models.IntegerField(primary_key=True) #Clave primaria explicita
     restaurante = models.ForeignKey(Restaurantes) #clave foranea restaurante_id
-    usuarios = models.ForeignKey(Usuarios) #clave foranea usuario_id
+    usuarios = models.ForeignKey("Usuarios") #clave foranea usuario_id
     fecha_fav = models.DateField(auto_now=False)
 
 class Usuarios(models.Model):
@@ -109,15 +109,15 @@ class Usuarios(models.Model):
     usuario_email = models.EmailField(max_length=254)
     usuario_direccion = models.CharField(max_length=255)
     usuario_codigoPostal = models.IntegerField(null=True)
-    fecha_alta = DateField(auto_now=False)
-    fecha_baja = DateField(auto_now=False)
+    fecha_alta = models.DateField(auto_now=False)
+    fecha_baja = models.DateField(auto_now=False)
     baja_logica = models.SmallIntegerField(null=True)
 
 class Puntaje_usuarios (models.Model):
     puntaje_usuarios_id = models.IntegerField(primary_key=True) #Clave primaria explicita
-    usuarios = models.ForeignKey(Usuarios) #clave foranea usuario_id
-    usuarios = models.ForeignKey(Usuarios) #clave foranea usuario_id
-    puntaje = models.ForeignKey(Puntaje) #clave foranea puntaje_id
+    usuarios = models.ForeignKey("Usuarios") #clave foranea usuario_id
+    usuarios = models.ForeignKey("Usuarios") #clave foranea usuario_id
+    puntaje = models.ForeignKey("Puntaje") #clave foranea puntaje_id
 
 #Realmente no se para que es esta tabla
 class Puntaje_tipo_usuario (models.Model):
