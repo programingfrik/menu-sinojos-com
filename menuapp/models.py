@@ -55,7 +55,7 @@ class Pedidos(models.Model):
     usuarios = models.ForeignKey("Usuarios") #clave foranea usuario_id
     fecha_pedido = models.DateField(auto_now=False)
     hora_pedido = models.TimeField(auto_now=False)  #LuisPv: Sobre este campo tengo mis dudas
-    total_pedido = models.DecimalField(max_digits=None, decimal_places=None) 
+    total_pedido = models.DecimalField(max_digits=12, decimal_places=2) 
     estado_pedido = models.CharField(max_length=254)
 
 class Puntaje_restaurante(models.Model):
@@ -81,7 +81,7 @@ class Pedidos_platos(models.Model):
 class Platos_precios(models.Model):
     plato_precio_id = models.IntegerField(primary_key=True) #Clave primaria explicita
     platos = models.ForeignKey(Platos) #clave foranea Plato_id
-    precio_plato = models.DecimalField(max_digits=None, decimal_places=None)
+    precio_plato = models.DecimalField(max_digits=12, decimal_places=2)
 
 class Puntaje_platos(models.Model):
     Puntaje_platos_id = models.IntegerField(primary_key=True) #Clave primaria explicita
